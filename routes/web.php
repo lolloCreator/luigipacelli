@@ -50,6 +50,8 @@ Route::get('/servizi-blog', function () {
     return view('portfolio.blog');
 });
 
+Route::post('contatto', 'App\Http\Controllers\ContattiController@store'); 
+
 
 //Mail
 Route::get('send-mail', function () {

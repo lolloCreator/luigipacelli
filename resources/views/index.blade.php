@@ -47,23 +47,23 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li class="active"><a href="#header">@lang('messages.home')</a></li>
+          <li><a href="#about">@lang('messages.about')</a></li>
           <!--<li><a href="#resume">Resume</a></li>-->
-          <li><a href="#services">Servizi</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">@lang('messages.servizi')</a></li>
+          <li><a href="#portfolio">@lang('messages.portfolio')</a></li>
+          <li><a href="#contact">@lang('messages.contatti')</a></li>
           @if (Route::has('login'))
           <div class="separatore">|</div>
                     @auth
                     @if (Auth::user()->role_id == 1)
-                    <li><a href="{{ url('/admin') }}">Admin</a></li>
+                    <li><a href="{{ url('/admin') }}">@lang('messages.admin')</a></li>
                     @endif
-                    <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ url('/dashboard') }}">@lang('messages.dashboard')</a></li>
                     @else
-                        <li><a href="{{ route('login') }}">Accedi</a></li>
+                        <li><a href="{{ route('login') }}">@lang('messages.accedi')</a></li>
                         @if (Route::has('register'))
-                        <li><a href="{{ route('register') }}">Registrati</a></li>
+                        <li><a href="{{ route('register') }}">@lang('messages.registrati')</a></li>
                         @endif
                     @endauth
             @endif
@@ -88,8 +88,8 @@
 <div class="about-me container">
 
   <div class="section-title">
-    <h2>About</h2>
-    <p>Scopri di più su di me</p>
+    <h2>@lang('messages.about_nome')</h2>
+    <p>@lang('messages.about_desc')</p>
   </div>
 
   <div class="row">
@@ -97,29 +97,26 @@
       <img src="images/img.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-      <h3>Developer &amp; Graphic Designer</h3>
+      <h3>@lang('messages.about_dx_titolo')</h3>
       <p class="font-italic">
-        Nel grande oceano dell'ordinario, assicurati che il tuo business online faccia la differenza.
+      @lang('messages.about_dx_desc')
       </p>
       <div class="row">
         <div class="col-lg-6">
           <ul>
-            <li><i class="icofont-rounded-right"></i> <strong>Compleanno:</strong> 19 Gennaio</li>
-            <li><i class="icofont-rounded-right"></i> <strong>Sito web:</strong> www.luigipacelli.it</li>
-            <li><i class="icofont-rounded-right"></i> <strong>Cellulare:</strong> +39 3664736205</li>
+          <li><i class="icofont-rounded-right"></i> <strong>@lang('messages.about_email'):</strong> luigi@luigipacelli.it</li>
+            <li><i class="icofont-rounded-right"></i> <strong>@lang('messages.about_sito'):</strong> www.luigipacelli.it</li>
           </ul>
         </div>
         <div class="col-lg-6">
           <ul>
-            <li><i class="icofont-rounded-right"></i> <strong>Età:</strong> <?php echo date("Y") - 1998; ?></li>
-            <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> luigi@luigipacelli.it</li>
-            <li><i class="icofont-rounded-right"></i> <strong>Città:</strong> Capodrise, CE, Italy</li>
+            <li><i class="icofont-rounded-right"></i> <strong>@lang('messages.about_eta'):</strong> <?php echo date("Y") - 1998; ?></li>
+            <li><i class="icofont-rounded-right"></i> <strong>@lang('messages.about_citta'):</strong> Capodrise, CE, Italy</li>
           </ul>
         </div>
       </div>
       <p>
-        Mi chiamo Luigi, ho iniziato ad appassionarmi alla tecnologia e allo sviluppo quando ho comprato il mio primo computer (2015). Ho iniziato a creare giochi online, poi ho volto
-        il mio interesse verso forme di sviluppo più complesse. Ad oggi la mia voglia di apprendere, di creare e di sviluppare è ancora più forte di prima.
+      @lang('messages.about_bio')
       </p>
     </div>
   </div>
@@ -135,7 +132,7 @@
     <div class="count-box">
       <i class="icofont-simple-smile"></i>
       <span data-toggle="counter-up">37</span>
-      <p>Clienti felici</p>
+      <p>@lang('messages.about_clienti')</p>
     </div>
   </div>
 
@@ -143,7 +140,7 @@
     <div class="count-box">
       <i class="icofont-document-folder"></i>
       <span data-toggle="counter-up">43</span>
-      <p>Progetti</p>
+      <p>@lang('messages.about_progetti')</p>
     </div>
   </div>
 
@@ -151,7 +148,7 @@
     <div class="count-box">
       <i class="icofont-pause"></i>
       <span data-toggle="counter-up">0</span>
-      <p>Giorni di pausa</p>
+      <p>@lang('messages.about_pausa')</p>
     </div>
   </div>
 
@@ -159,7 +156,7 @@
     <div class="count-box">
       <i class="icofont-coffee-cup"></i>
       <span data-toggle="counter-up">99</span>
-      <p>Caffè</p>
+      <p>@lang('messages.about_caffe')</p>
     </div>
   </div>
 
@@ -171,7 +168,7 @@
 <div class="skills container">
 
 <div class="section-title">
-  <h2>Skills</h2>
+  <h2>@lang('messages.about_skills')</h2>
 </div>
 
 <div class="row skills-content">
@@ -234,80 +231,80 @@
 <div class="interests container">
 
 <div class="section-title">
-  <h2>Interessi</h2>
+  <h2>@lang('messages.about_interessi')</h2>
 </div>
 
 <div class="row">
   <div class="col-lg-3 col-md-4">
     <div class="icon-box">
       <i class="ri-shield-keyhole-line" style="color: #ffbb2c;"></i>
-      <h3>Sicurezza</h3>
+      <h3>@lang('messages.about_1')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
     <div class="icon-box">
       <i class="ri-brush-line" style="color: #5578ff;"></i>
-      <h3>Design</h3>
+      <h3>@lang('messages.about_2')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
     <div class="icon-box">
       <i class="ri-pantone-fill" style="color: #e80368;"></i>
-      <h3>Minimalismo</h3>
+      <h3>@lang('messages.about_3')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
     <div class="icon-box">
       <i class="ri-bug-line" style="color: #e361ff;"></i>
-      <h3>Problem solving</h3>
+      <h3>@lang('messages.about_4')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-database-2-line" style="color: #47aeff;"></i>
-      <h3>Database</h3>
+      <h3>@lang('messages.about_5')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="icofont-washing-machine" style="color: #ffa76e;"></i>
-      <h3>Pulizia codice</h3>
+      <h3>@lang('messages.about_6')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-question-answer-fill" style="color: #11dbcf;"></i>
-      <h3>Supporto</h3>
+      <h3>@lang('messages.about_7')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-message-2-line" style="color: #4233ff;"></i>
-      <h3>Commenti nel codice</h3>
+      <h3>@lang('messages.about_8')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-book-line" style="color: #b2904f;"></i>
-      <h3>Studio</h3>
+      <h3>@lang('messages.about_9')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-github-line" style="color: #b20969;"></i>
-      <h3>Github</h3>
+      <h3>@lang('messages.about_10')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-stack-overflow-line" style="color: #ff5828;"></i>
-      <h3>Stack Overflow</h3>
+      <h3>@lang('messages.about_11')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
       <i class="ri-window-line" style="color: #29cc61;"></i>
-      <h3>Internet</h3>
+      <h3>@lang('messages.about_12')</h3>
     </div>
   </div>
 </div>
@@ -623,33 +620,27 @@
   </div>
 </div>
 
-<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+<form action="{{url('contatto')}}" method="post" role="form" name="contact-form" id="contact-form" class="php-email-form mt-4">
+@csrf
   <div class="form-row">
     <div class="col-md-6 form-group">
-      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      <input type="text" name="nome" class="form-control" id="nome" placeholder="@lang('messages.nome')" minlength="4" required=""/>
       <div class="validate"></div>
     </div>
     <div class="col-md-6 form-group">
-      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+      <input type="email" class="form-control" name="email" id="email" placeholder="@lang('messages.email')" required=""/>
       <div class="validate"></div>
     </div>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+    <input type="text" class="form-control" name="oggetto" id="oggetto" placeholder="@lang('messages.oggetto')" minlength="3" maxlength="100"/>
     <div class="validate"></div>
   </div>
   <div class="form-group">
-    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-    <div class="validate"></div>
+    <textarea class="form-control" name="messaggio" id="messaggio" rows="5" placeholder="@lang('messages.mex')" minlength="15" maxlength="1000" required=""></textarea>
   </div>
-  <div class="mb-3">
-    <div class="loading">Loading</div>
-    <div class="error-message"></div>
-    <div class="sent-message">Your message has been sent. Thank you!</div>
-  </div>
-  <div class="text-center"><button type="submit">Send Message</button></div>
+  <div class="text-center"><button type="submit" name="submit">@lang('messages.invia_msg')</button></div>
 </form>
-
 </div>
 </section><!-- End Contact Section -->
 
@@ -659,8 +650,31 @@
 <!-- Licensing information: https://bootstrapmade.com/license/ -->
 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
 
-Designed by <a href="https://luigipacelli.it/">lolloCreator</a>
+  @if(session('status'))
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Ciao {{ session('nome') }},</strong> {{ session('status') }}.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+  @endif
 
+  @if(count($errors))
+            <div class="form-group">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        @endif
+
+  Designed by <a href="https://luigipacelli.it/">lolloCreator</a>
 
 
 </div>
