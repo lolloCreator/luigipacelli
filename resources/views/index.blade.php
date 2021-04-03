@@ -624,28 +624,23 @@
 @csrf
   <div class="form-row">
     <div class="col-md-6 form-group">
-      <input type="text" name="nome" class="form-control" id="nome" placeholder="@lang('messages.nome')" minlength="4" required=""/>
+      <input type="text" value="{{ old('nome') }}" name="nome" class="form-control" id="nome" placeholder="@lang('messages.nome')" minlength="4" required=""/>
       <div class="validate"></div>
     </div>
     <div class="col-md-6 form-group">
-      <input type="email" class="form-control" name="email" id="email" placeholder="@lang('messages.email')" required=""/>
+      <input type="email" value="{{ old('email') }}" class="form-control" name="email" id="email" placeholder="@lang('messages.email')" required=""/>
       <div class="validate"></div>
     </div>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" name="oggetto" id="oggetto" placeholder="@lang('messages.oggetto')" minlength="4" maxlength="100"/>
+    <input type="text" class="form-control" value="{{ old('oggetto') }}" name="oggetto" id="oggetto" placeholder="@lang('messages.oggetto')" minlength="4" maxlength="100"/>
     <div class="validate"></div>
   </div>
-  <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }} center">
+  <div class="form-group center">
                                 {!! app('captcha')->display() !!}
-                                @if ($errors->has('g-recaptcha-response'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                                    </span>
-                                @endif
                         </div>
   <div class="form-group">
-    <textarea class="form-control" name="messaggio" id="messaggio" rows="5" placeholder="@lang('messages.mex')" minlength="15" maxlength="1000" required=""></textarea>
+    <textarea class="form-control" name="messaggio" id="messaggio" rows="5" placeholder="@lang('messages.mex')" minlength="15" maxlength="1000" required="">{{ old('messaggio') }}</textarea>
   </div>
   <div class="text-center"><button type="submit" name="submit">@lang('messages.invia_msg')</button></div>
 </form>
