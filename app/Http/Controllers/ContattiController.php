@@ -21,6 +21,7 @@ class ContattiController extends Controller
             'email' => 'required',
             'oggetto' => 'required|min:4|max:100',
             'messaggio' => 'required|min:15|max:1000',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
          $messaggio = new Messages;
