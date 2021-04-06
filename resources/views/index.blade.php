@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <meta content="HTML, CSS, JavaScript" name="keywords">
-
   <title>setting('site.title')</title>
   <meta name="author" content="Luigi Pacelli">
+  <meta content="HTML, CSS, JavaScript" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
