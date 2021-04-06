@@ -11,8 +11,8 @@
   <meta content="HTML, CSS, JavaScript" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ setting('site.logo') }}" rel="icon">
-  <link href="{{ setting('site.logo') }}" rel="apple-touch-icon">
+  <link href="/storage/{{ setting('site.logo') }}" rel="icon">
+  <link href="/storage/{{ setting('site.logo') }}" rel="apple-touch-icon">
 
 
     <!-- Scripts -->
