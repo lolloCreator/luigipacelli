@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Titolo -->
-  <title>setting('site.title')</title>
+  <title>{{ setting('site.title') }}</title>
   <meta name="author" content="Luigi Pacelli">
   <meta content="HTML, CSS, JavaScript" name="keywords">
 
