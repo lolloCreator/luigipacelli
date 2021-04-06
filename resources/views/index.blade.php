@@ -2,10 +2,13 @@
 <html>
 <head>
 
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <meta content="" name="keywords">
+  <meta content="HTML, CSS, JavaScript" name="keywords">
+
+  <title>setting('site.title')</title>
+  <meta name="author" content="Luigi Pacelli">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
