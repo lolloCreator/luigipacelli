@@ -12,7 +12,7 @@
 
   <!-- Favicons -->
   <link href="{{ setting('site.logo') }}" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ setting('site.logo') }}" rel="apple-touch-icon">
 
 
     <!-- Scripts -->
