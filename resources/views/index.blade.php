@@ -85,7 +85,7 @@
     </div>
   </header><!-- End Header -->
 
-  @if {{ setting('.about_index') }}
+  @if {{ setting('site.about_index') }}
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
 
