@@ -74,11 +74,12 @@
       </nav><!-- .nav-menu -->
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+      <a href="https://twitter.com/lolloCreator" class="twitter"><i class="ri-twitter-line"></i></a>
+        <a href="https://www.facebook.com/lolloCreator/" class="facebook"><i class="ri-facebook-box-line"></i></a>
+        <a href="https://www.instagram.com/louis_pacelli/" class="instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" class="linkedin"><i class="ri-linkedin-box-line"></i></a>
+        <a href="https://github.com/lolloCreator" class="github"><i class="ri-github-line"></i></a>
+        <a href="https://www.tiktok.com/@lumenlabdev" class="tiktok"><i class="fab fa-tiktok"></i></i></a>
       </div>
 
     </div>
