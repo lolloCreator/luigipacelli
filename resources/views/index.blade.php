@@ -85,6 +85,7 @@
     </div>
   </header><!-- End Header -->
 
+  @if {{ setting('.about_index') }}
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
 
@@ -126,6 +127,7 @@
   </div>
 
 </div><!-- End About Me -->
+@endif
 
  <!-- ======= Counts ======= -->
  <div class="counts container">
