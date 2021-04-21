@@ -617,8 +617,8 @@
   <div class="col-md-6 mt-4 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-phone-call"></i>
-      <h3>Chiamami</h3>
-      <p>+39 3664736205</p>
+      <h3>Email secondaria</h3>
+      <p>lumenlabhelp@gmail.com</p>
     </div>
   </div>
 </div>
