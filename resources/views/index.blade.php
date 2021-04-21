@@ -51,10 +51,10 @@
         <ul>
           
           <li class="active"><a href="#header">@lang('messages.home')</a></li>
-          <li><a href="#about">@lang('messages.about')</a></li>
+          @if( setting('site.about_index') ) <li><a href="#about">@lang('messages.about')</a></li> @endif
           <!--<li><a href="#resume">Resume</a></li>-->
           <li><a href="#services">@lang('messages.servizi')</a></li>
-          <li><a href="#portfolio">@lang('messages.portfolio')</a></li>
+          @if(setting('site.portfolio_index'))<li><a href="#portfolio">@lang('messages.portfolio')</a></li>@endif
           <li><a href="#contact">@lang('messages.contatti')</a></li>
           @if (Route::has('login'))
           <div class="separatore">|</div>
@@ -85,7 +85,7 @@
     </div>
   </header><!-- End Header -->
 
-  @if {{ setting('site.about_index') }}
+  @if( setting('site.about_index') )
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
 
@@ -127,7 +127,7 @@
   </div>
 
 </div><!-- End About Me -->
-@endif
+
 
  <!-- ======= Counts ======= -->
  <div class="counts container">
@@ -461,6 +461,7 @@
 </div>
 </section> -->
 <!-- End Resume Section -->
+@endif
 
 <!-- ======= Services Section ======= -->
 <section id="services" class="services">
@@ -525,6 +526,7 @@
 </div>
 </section><!-- End Services Section -->
 
+@if(setting('site.portfolio_index'))
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
 <div class="container">
@@ -576,6 +578,8 @@
 
 </div>
 </section><!-- End Portfolio Section -->
+
+@endif
 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
