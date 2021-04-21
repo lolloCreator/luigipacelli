@@ -603,6 +603,7 @@
         <a href="https://www.instagram.com/louis_pacelli/" class="instagram"><i class="ri-instagram-line"></i></a>
         <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" class="linkedin"><i class="ri-linkedin-box-line"></i></a>
         <a href="https://github.com/lolloCreator" class="github"><i class="ri-github-line"></i></a>
+        <a href="https://www.tiktok.com/@lumenlabdev" class="tiktok"><i class="fab fa-tiktok"></i></i></a>
       </div>
     </div>
   </div>
@@ -699,6 +700,8 @@
   <!-- Template Main JS File -->
   <script src="{{ asset('js/portfolio.js') }}"></script>
   <script src="{{ asset('vendor/typing/custom_typing.js') }}"></script>
+
+  <script src="https://kit.fontawesome.com/9b95a72150.js" crossorigin="anonymous"></script>
 
 
 
