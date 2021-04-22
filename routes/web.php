@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UtentiController;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,11 +47,21 @@ Route::group(['prefix' => 'admin'], function () {
 
 // PORTFOLIO //
 
+/*
 Route::get('/servizi-blog', function () {
-    return view('portfolio.blog');
+    $posts = App\Models\Post::with('categoria')->get();
+    return view('portfolio.blog', compact('posts'));
 });
+*/
 
 Route::post('contatto', 'App\Http\Controllers\ContattiController@store'); 
+Route::get('/servizi-blog', 'App\Http\Controllers\PostsController@index'); 
+
+Route::get('post/{slug}', function($slug){
+	$post = App\Models\Post::where('slug', '=', $slug)->firstOrFail();
+	return view('portfolio.post', compact('post'));
+});
+
 
 
 //Mail
