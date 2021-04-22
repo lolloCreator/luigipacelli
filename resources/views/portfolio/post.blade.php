@@ -86,9 +86,9 @@
         <hr>
 
         <!-- Preview Image -->
+        <!--
         <img class="img-fluid rounded" src="{{ Voyager::image( $post->image ) }}" style="width:100%" alt="">
-
-        <hr>
+-->
 
         <!-- Post Content -->
         <p class="lead">{!! $post->body !!}</p>

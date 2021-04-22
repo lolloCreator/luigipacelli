@@ -24,9 +24,9 @@
 </head>
 <body>
 
-<div class="container">
 
-<header class="blog-header py-3">
+<div class="container">
+      <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a class="text-muted" href="#">Subscribe</a>
@@ -59,108 +59,47 @@
           <a class="p-2 text-muted" href="#">Travel</a>
         </nav>
       </div>
+<!--
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+      </div>
+-->
 
-    <div class="row">
 
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">
 
-        <h1 class="my-4">Blog
-          <small>Archivio</small>
-        </h1>
-        @foreach($posts as $post)
-        <!-- Blog Post -->
-        <div class="card mb-4">
-          <img class="card-img-top" src="{{ Voyager::image( $post->image ) }}" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">{{ $post->title }}</h2>
-            <p class="card-text">{{ $post->excerpt }}</p>
-            <a href="/post/{{ $post->slug }}" class="btn btn-primary">Continua a leggere →</a>
-          </div>
-          <div class="card-footer text-muted">
-          Inserito il
-          <?php 
+   <div class="row mb-2">
+      @foreach($posts as $post)
+  <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">{{$post->categorie->name}}</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="/post/{{ $post->slug }}">{{ $post->title }}</a>
+              </h3>
+              <div class="mb-1 text-muted">
+              <?php 
                 $datetime = new DateTime($post->created_at);
-                $date = $datetime->format('d-m-Y');
+                $date = $datetime->format('Y-m-d');
                 echo $date;
               ?>
+              </div>
+              <p class="card-text mb-auto">{{ $post->excerpt }}</p>
+              <a href="/post/{{ $post->slug }}">Continua a leggere</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" src="{{ Voyager::image( $post->image ) }}" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
         @endforeach
-
-        <!-- Pagination -->
-        {!! $posts->links('portfolio.pagination_custom') !!}
-
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-append">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">Freebies</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Tutorials</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-      </div>
-
     </div>
-    <!-- /.row -->
+   
 
-  </div>
 
-  
+
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

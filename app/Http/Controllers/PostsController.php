@@ -11,7 +11,7 @@ class PostsController extends Controller
 
     public function index()
     {
-        $posts = Post::with('categorie')->get();
+        $posts = Post::with('categorie')->paginate(2);
 
         return view('portfolio.blog', compact('posts'));
         /*
