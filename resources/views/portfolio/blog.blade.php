@@ -95,6 +95,7 @@
     <h2>Nessun articolo trovato</h2>
     </div>
     </div>
+    <a role="button" href="{{  Request::path() }}" class="btn btn-secondary">Indietro</a>
     @endif
 
         <!-- Pagination -->
@@ -114,7 +115,7 @@
             <div class="input-group">
               <input type="text" class="form-control" name="search" placeholder="Ricerca...">
               <span class="input-group-append">
-                <button class="btn btn-secondary" type="submit">Go!</button>
+                <button class="btn btn-secondary" type="submit">Vai!</button>
               </span>
             </div>
             </form>
