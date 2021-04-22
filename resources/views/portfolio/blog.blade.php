@@ -68,6 +68,8 @@
         <h1 class="my-4">Blog
           <small>Archivio</small>
         </h1>
+     
+    @if($posts->isNotEmpty())
         @foreach($posts as $post)
         <!-- Blog Post -->
         <div class="card mb-4">
@@ -87,6 +89,13 @@
           </div>
         </div>
         @endforeach
+    @else
+    <div class="card mb-4">
+    <div class="card-body">
+    <h2>Nessun articolo trovato</h2>
+    </div>
+    </div>
+    @endif
 
         <!-- Pagination -->
         {!! $posts->links('portfolio.pagination_custom') !!}
@@ -96,17 +105,19 @@
 
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4">
-
+    
         <!-- Search Widget -->
         <div class="card my-4">
           <h5 class="card-header">Search</h5>
           <div class="card-body">
+          <form action="{{ route('search') }}" method="GET">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
+              <input type="text" class="form-control" name="search" placeholder="Ricerca...">
               <span class="input-group-append">
-                <button class="btn btn-secondary" type="button">Go!</button>
+                <button class="btn btn-secondary" type="submit">Go!</button>
               </span>
             </div>
+            </form>
           </div>
         </div>
 
