@@ -56,6 +56,7 @@
           <li><a href="#services">@lang('messages.servizi')</a></li>
           @if(setting('site.portfolio_index'))<li><a href="#portfolio">@lang('messages.portfolio')</a></li>@endif
           <li><a href="#contact">@lang('messages.contatti')</a></li>
+          @if( setting('site.registrazione_abilitata'))
           @if (Route::has('login'))
           <div class="separatore">|</div>
                     @auth
@@ -70,6 +71,7 @@
                         @endif
                     @endauth
             @endif
+          @endif
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -689,7 +691,21 @@
             </div>
         @endif
 
+        @if( setting('site.manutenzione') ) 
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <h4 class="alert-heading">MANUTENZIONE!</h4>
+  Ciao, il sito è in <strong>manutenzione!</strong> Puoi comunque navigare liberamente.
+  Se hai problemi di carcamento, bug o rallentamenti è questa la causa.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
+
   Designed by <a href="https://luigipacelli.it/">lolloCreator</a>
+
+
+
 
 
 </div>
