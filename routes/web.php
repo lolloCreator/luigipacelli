@@ -55,8 +55,8 @@ Route::get('/servizi-blog', function () {
 */
 
 Route::post('contatto', 'App\Http\Controllers\ContattiController@store'); 
-Route::get('/servizi-blog', 'App\Http\Controllers\PostsController@index'); 
-Route::get('/servizi-blog', 'App\Http\Controllers\PostsController@search')->name('search');
+Route::get('/blog', 'App\Http\Controllers\PostsController@index'); 
+Route::get('/blog', 'App\Http\Controllers\PostsController@search')->name('search');
 
 Route::get('post/{slug}', function($slug){
 	$post = App\Models\Post::where('slug', '=', $slug)->firstOrFail();

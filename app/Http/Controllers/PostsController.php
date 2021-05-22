@@ -12,8 +12,9 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::with('categorie')->paginate(2);
+        $cat = Category::all();
 
-        return view('portfolio.blog', compact('posts'));
+        return view('portfolio.blog', compact('posts','cat'));
         /*
         $listings = Post::with('categoria')->get();
         return $listings;
@@ -23,6 +24,7 @@ class PostsController extends Controller
     public function search(Request $request){
         // Get the search value from the request
         $search = $request->input('search');
+        $cat = Category::all();
     
         // Search in the title and body columns from the posts table
         $posts = Post::query()
@@ -30,7 +32,7 @@ class PostsController extends Controller
             ->paginate(2);
     
         // Return the search view with the resluts compacted
-        return view('portfolio.blog', compact('posts'));
+        return view('portfolio.blog', compact('posts', 'cat'));
     }
 
 }

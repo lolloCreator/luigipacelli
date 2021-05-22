@@ -56,6 +56,8 @@
           <li><a href="#services">@lang('messages.servizi')</a></li>
           @if(setting('site.portfolio_index'))<li><a href="#portfolio">@lang('messages.portfolio')</a></li>@endif
           <li><a href="#contact">@lang('messages.contatti')</a></li>
+          <div class="separatore">|</div>
+          <li><a href="/blog">Blog</a></li>
           @if( setting('site.registrazione_abilitata'))
           @if (Route::has('login'))
           <div class="separatore">|</div>
