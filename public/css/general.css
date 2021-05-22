@@ -1,4 +1,34 @@
-.categorie_ul{
+.categorie_ul {
     list-style: none;
     font-size: large;
+}
+
+.head {
+    box-shadow: 5px 8px #88888875;
+    border-radius: 5px;
+}
+
+.blog_social {
+    text-align: right;
+    height: 25px;
+    background-color: #f2f3f4;
+}
+
+.blog_social > a {
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.blog_social > a:hover {
+    text-decoration: none;
+    color: #808b96;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.active {
+    color: blue !important;
 }

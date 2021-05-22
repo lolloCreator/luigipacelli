@@ -54,6 +54,8 @@ Route::get('/servizi-blog', function () {
 });
 */
 
+
+//POST del BLOG
 Route::post('contatto', 'App\Http\Controllers\ContattiController@store'); 
 Route::get('/blog', 'App\Http\Controllers\PostsController@index'); 
 Route::get('/blog', 'App\Http\Controllers\PostsController@search')->name('search');
@@ -62,6 +64,7 @@ Route::get('post/{slug}', function($slug){
 	$post = App\Models\Post::where('slug', '=', $slug)->firstOrFail();
 	return view('portfolio.post', compact('post'));
 });
+//CATEGORIE del BLOG
 
 
 
@@ -75,7 +78,7 @@ Route::get('send-mail', function () {
         'body' => 'This is for testing email using smtp'
     ];
    
-    \Mail::to('luigipacellienel@gmail.com')->send(new \App\Mail\myMail($details));
+    Mail::to('luigipacellienel@gmail.com')->send(new \App\Mail\myMail($details));
    
     dd("Email is Sent.");
 });
