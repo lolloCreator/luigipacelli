@@ -35,6 +35,17 @@
     <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/venobox/venobox.css') }}" rel="stylesheet">
     
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8F6YZBR3X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-R8F6YZBR3X');
+    </script>
+    
 </head>
 <body>
 <div class="bg"></div>
