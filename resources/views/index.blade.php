@@ -45,7 +45,7 @@
     
       gtag('config', 'G-R8F6YZBR3X');
     </script>
-    
+
 </head>
 <body>
 <div class="bg"></div>
@@ -67,22 +67,22 @@
           <li><a href="#services">@lang('messages.servizi')</a></li>
           @if(setting('site.portfolio_index'))<li><a href="#portfolio">@lang('messages.portfolio')</a></li>@endif
           <li><a href="#contact">@lang('messages.contatti')</a></li>
-          <div class="separatore">|</div>
+          <div class="separatore"></div>
           <li><a href="/blog">Blog</a></li>
           @if( setting('site.registrazione_abilitata'))
-          @if (Route::has('login'))
-          <div class="separatore">|</div>
-                    @auth
-                    @if (Auth::user()->role_id == 1)
-                    <li><a href="{{ url('/admin') }}">@lang('messages.admin')</a></li>
-                    @endif
-                    <li><a href="{{ url('/dashboard') }}">@lang('messages.dashboard')</a></li>
-                    @else
-                        <li><a href="{{ route('login') }}">@lang('messages.accedi')</a></li>
-                        @if (Route::has('register'))
-                        <li><a href="{{ route('register') }}">@lang('messages.registrati')</a></li>
-                        @endif
-                    @endauth
+            @if (Route::has('login'))
+            <div class="separatore"></div>
+                      @auth
+                      @if (Auth::user()->role_id == 1)
+                      <li><a href="{{ url('/admin') }}">@lang('messages.admin')</a></li>
+                      @endif
+                      <li><a href="{{ url('/dashboard') }}">@lang('messages.dashboard')</a></li>
+                      @else
+                          <li><a href="{{ route('login') }}">@lang('messages.accedi')</a></li>
+                          @if (Route::has('register'))
+                          <li><a href="{{ route('register') }}">@lang('messages.registrati')</a></li>
+                          @endif
+                      @endauth
             @endif
           @endif
         </ul>

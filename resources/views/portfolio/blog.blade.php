@@ -12,6 +12,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <link href="{{ asset('css/general.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 
@@ -65,7 +66,7 @@
           <div class="card-body">
             <h2 class="card-title">{{ $post->title }}</h2>
             <p class="card-text">{{ $post->excerpt }}</p>
-            <a href="/post/{{ $post->slug }}" class="btn btn-primary">Continua a leggere →</a>
+            <a href="/post/{{ $post->slug }}" class="btn btn-primary animated"><span>Continua a leggere </span></a>
           </div>
           <div class="card-footer text-muted">
           Inserito il

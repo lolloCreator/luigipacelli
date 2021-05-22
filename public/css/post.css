@@ -1,0 +1,39 @@
+body {
+    background-color: white !important;
+}
+
+.body p {
+    margin-top: 56px;
+    font-size: 21px;
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.body p:first-child {
+    margin-top: 0px;
+}
+
+.container {
+    background-color: white;
+    max-width: 680px !important;
+}
+
+.body pre {
+    background: rgba(229, 231, 233, 0.5);
+    padding: 15px;
+    margin-top: 56px;
+    font-size: 16px;
+    font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+}
+
+code {
+    background: rgba(229, 231, 233, 0.5);
+    color: black !important;
+    padding: 2px;
+}
+
+.body a {
+    color: black !important;
+    padding: 2px;
+    font-style: italic;
+    text-decoration: underline;
+}

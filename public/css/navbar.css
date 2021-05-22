@@ -1,0 +1,30 @@
+.head {
+    box-shadow: 5px 8px #8888883f;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.blog_social {
+    text-align: right;
+    height: 25px;
+    background-color: #f2f3f4;
+}
+
+.blog_social > a {
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.blog_social > a:hover {
+    text-decoration: none;
+    color: #808b96;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.active {
+    color: blue !important;
+}
