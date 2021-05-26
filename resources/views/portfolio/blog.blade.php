@@ -6,20 +6,16 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="" name="keywords">
+  <title>Luigi Pacelli - Blog</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <link href="{{ asset('css/general.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-
-    <!-- Vendor CSS -->
-    <link href="{{ asset('vendor/icofont/icofont.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,29 +24,38 @@
 </head>
 <body>
 
-<div class="container">
-<!-- Add font awesome icons -->
-<div class="head">
-<div class="blog_social">
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-</div>
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="#">Features</a>
-      <a class="nav-link" href="#">Pricing</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+<div class="head" id="head">
+
+    <div class="blog_social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
     </div>
+    <div class="container_head">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#">
+      LP
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="blog">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+      </div>
+      </div>
+    
+    </nav>
+    <!-- NAVBAR -->
   </div>
-</nav>
-</div>
 
-
+<div class="container">
     <div class="row">
 
       <!-- Blog Entries Column -->
@@ -92,9 +97,8 @@
 
 
       </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+      <!-- start sidebar -->
+      <div class="col-md-4" id="sb-r">
     
         <!-- Search Widget -->
         <div class="card my-4">
@@ -133,6 +137,7 @@
             You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
           </div>
         </div>
+        <!-- end sidebar -->
 
       </div>
 
@@ -146,6 +151,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
 </body>
 </html>

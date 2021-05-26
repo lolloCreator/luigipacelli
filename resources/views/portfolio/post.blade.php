@@ -6,20 +6,16 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="" name="keywords">
+  <title>LP - {{ $post->title }}</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/post.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-
-    <!-- Vendor CSS -->
-    <link href="{{ asset('vendor/icofont/icofont.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
 
     
     <!-- FONT AWESOME -->
@@ -61,11 +57,7 @@
   </div>
 
 <div class="container">
-<!-- Add font awesome icons -->
-
-
     <div class="row">
-
       <!-- Post Content Column -->
       <div class="col">
 
@@ -98,19 +90,5 @@
           <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-
-    <script>
-    window.onscroll = function() {myFunction()};
-    var container_nav = document.getElementById("head");
-    var sticky = container_nav.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        container_nav.classList.add("pinned");
-      } else {
-        container_nav.classList.remove("pinned");
-      }
-    }
-</script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 body {
-    background-color: #f2f3f4 !important;
+    background-color: white !important;
 }
 
 .container {
-    background-color: white;
+    background-color: transparent;
 }
 
 body.post {
@@ -40,6 +40,15 @@ a.animated span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.card-header {
+    border-bottom: none;
 }
 
 /*                */
