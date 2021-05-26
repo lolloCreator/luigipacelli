@@ -1,13 +1,17 @@
 .head {
-    box-shadow: 5px 8px #8888883f;
-    border-radius: 0px 0px 5px 5px;
-    border: 1px solid rgba(0, 0, 0, 0.267);
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    /* border-radius: 0px 0px 5px 5px; */
+}
+
+.container_head {
+    max-width: 1192px;
+    margin: 0 auto;
 }
 
 .blog_social {
     text-align: right;
     height: 25px;
-    background-color: #f2f3f4;
+    border-bottom: 1px solid #f2f3f4;
 }
 
 .blog_social > a {
@@ -23,6 +27,12 @@
 
 .nav-link {
     color: black !important;
+    transition: color 300ms linear;
+}
+
+.nav-link:hover {
+    color: #808b96 !important;
+    transition: color 300ms linear;
 }
 
 .active {

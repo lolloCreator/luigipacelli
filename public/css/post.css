@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: transparent;
     max-width: 680px !important;
 }
 
@@ -36,4 +36,8 @@ code {
     padding: 2px;
     font-style: italic;
     text-decoration: underline;
+}
+
+.mt-4 {
+    font-size: 48px;
 }
