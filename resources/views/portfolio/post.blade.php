@@ -26,7 +26,6 @@
 <body>
 
 <div class="head" id="head">
-
     <div class="blog_social">
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
@@ -40,14 +39,15 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <ul class="navbar-nav ml-auto">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </div>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <div class="navbar-nav">
+            <a class="nav-link" href="blog">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </div>
+        </ul>
       </div>
       </div>
       </div>
