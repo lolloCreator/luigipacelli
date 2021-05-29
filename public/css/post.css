@@ -20,7 +20,7 @@ body {
 .body pre {
     background: rgba(229, 231, 233, 0.5);
     padding: 15px;
-    max-height: 150px;
+    max-height: 600px;
     margin-top: 56px;
     font-size: 16px;
     font-family: Menlo, Monaco, "Courier New", Courier, monospace;

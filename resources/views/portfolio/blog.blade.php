@@ -16,18 +16,22 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     
     
 </head>
 <body>
 
 <div class="head" id="head">
-    <div class="blog_social">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
+  <div class="blog_social">
+      <div class="social_bar">
+        <a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
+      </div>
     </div>
     <div class="container_head">
     <!-- NAVBAR -->
@@ -42,9 +46,6 @@
         <ul class="navbar-nav ml-auto">
           <div class="navbar-nav">
             <a class="nav-link active" href="blog">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </div>
         </ul>
       </div>
@@ -67,12 +68,15 @@
         @foreach($posts as $post)
         <!-- Blog Post -->
         <div class="card mb-4">
-          <img class="card-img-top" src="{{ Voyager::image( $post->image ) }}" alt="Card image cap">
+          <a href="/post/{{ $post->slug }}"><img class="card-img-top" src="{{ Voyager::image( $post->image ) }}" alt="Card image cap"></a>
           <div class="card-body">
-            <h2 class="card-title">{{ $post->title }}</h2>
+            <a href="/post/{{ $post->slug }}"><h2 class="card-title">{{ $post->title }}</h2></a>
             <p class="card-text">{{ $post->excerpt }}</p>
-            <a href="/post/{{ $post->slug }}" class="btn btn-primary animated"><span>Continua a leggere </span></a>
+            <div class="btn_read">
+            <a href="/post/{{ $post->slug }}" class="btn btn-info animated"><span class="read_more">Continua a leggere </span></a>
           </div>
+        </div>
+
           <div class="card-footer text-muted">
           Inserito il
           <?php 
@@ -102,7 +106,7 @@
     
         <!-- Search Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Search</h5>
+          <h5 class="card-header">Ricerca qualcosa</h5>
           <div class="card-body">
           <form action="{{ route('search') }}" method="GET">
             <div class="input-group">
@@ -148,6 +152,66 @@
     <!-- /.row -->
 
   </div>
+
+<footer>
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">A proposito di</h2>
+      <ul class="ft_list">
+        <li><a href="#">Servizi</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Informazioni</a></li>
+        <li><a href="#">Lavori</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Risorse</h2>
+      <ul class="ft_list">
+        <li><a href="#">Documenti</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Guide</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Contatti</h2>
+      <ul class="ft_list">
+        <li><a href="#">Aiuto</a></li>
+        <li><a href="#">Messaggio</a></li>
+        <li><a href="#">Contattami</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Resta Aggiornato</h2>
+      <p>Iscriviti alla newsletter per ricevere le nuove news.</p>
+      <form class="ft_form">
+        <input type="email" name="email" placeholder="Inserisci una email">
+        <input type="submit" value="Iscriviti">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer social -->
+  <section class="ft-social">
+    <ul class="ft-social-list">
+      <li><a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a></li>
+    </ul>
+  </section>
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Termini &amp; Condizioni</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; {{ now()->year }} Copyright <a href="https://luigipacelli.it/">lolloCreator</a></li>
+    </ul>
+  </section>
+</footer>
 
   
 

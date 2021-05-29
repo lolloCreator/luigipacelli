@@ -29,7 +29,7 @@ class PostsController extends Controller
         // Search in the title and body columns from the posts table
         $posts = Post::query()
             ->where('title', 'LIKE', "%{$search}%")
-            ->paginate(2);
+            ->paginate(10);
     
         // Return the search view with the resluts compacted
         return view('portfolio.blog', compact('posts', 'cat'));

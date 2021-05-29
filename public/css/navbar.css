@@ -9,20 +9,29 @@
 }
 
 .blog_social {
-    text-align: right;
-    height: 25px;
+    height: 40px;
     border-bottom: 1px solid #f2f3f4;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.blog_social > a {
-    color: black;
-    padding: 6px;
+.blog_social > .social_bar {
+    margin: 6px;
     text-decoration: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    white-space: nowrap;
 }
 
-.blog_social > a:hover {
-    text-decoration: none;
-    color: #808b96;
+.social_bar > a > img {
+    margin-right: 6px;
+    max-height: 18px;
+}
+
+.social_bar > a > img:hover {
+    transform: scale(1.2);
+    transition: transform 200ms linear;
 }
 
 .nav-link {

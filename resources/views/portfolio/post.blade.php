@@ -26,9 +26,15 @@
 <body>
 
 <div class="head" id="head">
-    <div class="blog_social">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
+  <div class="blog_social">
+      <div class="social_bar">
+        <a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
+        <a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
+      </div>
     </div>
     <div class="container_head">
     <!-- NAVBAR -->
@@ -42,10 +48,7 @@
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <ul class="navbar-nav ml-auto">
           <div class="navbar-nav">
-            <a class="nav-link" href="blog">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="../blog">Home</a>
           </div>
         </ul>
       </div>
