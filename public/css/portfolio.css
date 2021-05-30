@@ -12,14 +12,28 @@ body {
 body::before {
     content: "";
     position: fixed;
-    background: linear-gradient(110deg, #161c26 33%, rgba(0, 0, 0, 0) 33%),
-        linear-gradient(110deg, #2c323c 66%, #161c26 66%);
-    background-size: cover;
+    /*background: linear-gradient(110deg, #161c26 33%, rgba(0, 0, 0, 0) 33%),
+        linear-gradient(110deg, #2c323c 66%, #161c26 66%);*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     left: 0;
     right: 0;
     top: 0;
     height: 100vh;
     z-index: -1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (min-width: 1024px) {
