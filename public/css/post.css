@@ -39,6 +39,11 @@ code {
     text-decoration: underline;
 }
 
+.body img {
+    width: 100%;
+    left: 0;
+}
+
 .mt-4 {
     font-size: 48px;
 }
