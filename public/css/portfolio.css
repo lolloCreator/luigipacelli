@@ -14,7 +14,7 @@ body::before {
     position: fixed;
     /*background: linear-gradient(110deg, #161c26 33%, rgba(0, 0, 0, 0) 33%),
         linear-gradient(110deg, #2c323c 66%, #161c26 66%);*/
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #161c26, #2c323c, #23a6d5, #ee7752);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     left: 0;

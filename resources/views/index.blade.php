@@ -610,8 +610,8 @@
   <div class="col-md-6 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-map"></i>
-      <h3>Indirizzo</h3>
-      <p>Via F. Rao, Capodrise, Italy</p>
+      <h3>Paese</h3>
+      <p>Italia</p>
     </div>
   </div>
 
@@ -639,7 +639,7 @@
   </div>
   <div class="col-md-6 mt-4 d-flex align-items-stretch">
     <div class="info-box">
-      <i class="bx bx-phone-call"></i>
+      <i class="bx bx-envelope"></i>
       <h3>Email secondaria</h3>
       <p>lumenlabhelp@gmail.com</p>
     </div>
