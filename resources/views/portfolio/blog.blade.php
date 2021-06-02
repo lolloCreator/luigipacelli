@@ -93,7 +93,7 @@
     <h2>Nessun articolo trovato</h2>
     </div>
     </div>
-    <a role="button" href="{{  Request::path() }}" class="btn btn-secondary">Indietro</a>
+    <a role="button" href="/blog" class="btn btn-secondary">Indietro</a>
     @endif
 
         <!-- Pagination -->

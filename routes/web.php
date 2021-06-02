@@ -38,6 +38,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
 Route::get('/db', [UtentiController::class, 'dbCheck']);
 
 Route::group(['prefix' => 'admin'], function () {
@@ -57,7 +58,7 @@ Route::get('/servizi-blog', function () {
 //POST del BLOG
 Route::post('contatto', 'App\Http\Controllers\ContattiController@store'); 
 Route::get('/blog', 'App\Http\Controllers\PostsController@index'); 
-Route::get('/blog', 'App\Http\Controllers\PostsController@search')->name('search');
+Route::get('/blog/s', 'App\Http\Controllers\PostsController@search')->name('search');
 
 Route::get('post/{slug}', function($slug){
 	$post = App\Models\Post::where('slug', '=', $slug)->firstOrFail();

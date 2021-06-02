@@ -9,17 +9,14 @@ use App\Models\Category;
 class PostsController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::with('categorie')->orderBy('created_at', 'asc')->paginate(2);
-        $cat = Category::all();
-
-        return view('portfolio.blog', compact('posts','cat'));
-        /*
-        $listings = Post::with('categoria')->get();
-        return $listings;
-        */
+            $posts = Post::with('categorie')->orderBy('id','DESC')->paginate(1);
+            $cat = Category::all();
+    
+            return view('portfolio.blog', compact('posts', 'cat'));
     }
+    
 
     public function search(Request $request){
         // Get the search value from the request
@@ -29,6 +26,7 @@ class PostsController extends Controller
         // Search in the title and body columns from the posts table
         $posts = Post::query()
             ->where('title', 'LIKE', "%{$search}%")
+            ->orderBy('id','DESC')
             ->paginate(10);
     
         // Return the search view with the resluts compacted
