@@ -11,7 +11,7 @@ class PostsController extends Controller
 
     public function index()
     {
-        $posts = Post::with('categorie')->orderBy('created_at', 'desc')->paginate(2);
+        $posts = Post::with('categorie')->orderBy('created_at', 'asc')->paginate(2);
         $cat = Category::all();
 
         return view('portfolio.blog', compact('posts','cat'));
