@@ -18,7 +18,7 @@
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     
-    <script data-ad-client="ca-pub-1233457771945281" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
 </head>
 <body>
 
