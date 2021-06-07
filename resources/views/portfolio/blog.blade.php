@@ -24,19 +24,19 @@
 
 <div class="head" id="head">
   <div class="blog_social">
-      <div class="social_bar">
-        <a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
+  <div class="social_bar">
+        <a href="https://www.tiktok.com/@lumenlabdev" target="_blank"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
+        <a href="https://www.instagram.com/lumenlabdev/" target="_blank"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
+        <a href="https://www.facebook.com/lolloCreator/" target="_blank"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
+        <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" target="_blank"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
+        <a href="https://github.com/lolloCreator" target="_blank"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
+        <a href="mailto:luigi@luigipacelli.it" target="_blank"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
       </div>
     </div>
     <div class="container_head">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       LP
     </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

@@ -90,12 +90,12 @@
       </nav><!-- .nav-menu -->
 
       <div class="social-links">
-      <a href="https://twitter.com/lolloCreator" class="twitter"><i class="ri-twitter-line"></i></a>
-        <a href="https://www.facebook.com/lolloCreator/" class="facebook"><i class="ri-facebook-box-line"></i></a>
-        <a href="https://www.instagram.com/louis_pacelli/" class="instagram"><i class="ri-instagram-line"></i></a>
-        <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" class="linkedin"><i class="ri-linkedin-box-line"></i></a>
-        <a href="https://github.com/lolloCreator" class="github"><i class="ri-github-line"></i></a>
-        <a href="https://www.tiktok.com/@lumenlabdev" class="tiktok"><i class="fab fa-tiktok"></i></i></a>
+      <a href="https://twitter.com/lolloCreator" class="twitter" target="_blank"><i class="ri-twitter-line"></i></a>
+        <a href="https://www.facebook.com/lolloCreator/" class="facebook" target="_blank"><i class="ri-facebook-box-line"></i></a>
+        <a href="https://www.instagram.com/lumenlabdev/" class="instagram" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" class="linkedin" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+        <a href="https://github.com/lolloCreator" class="github" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.tiktok.com/@lumenlabdev" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></i></a>
       </div>
 
     </div>

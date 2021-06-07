@@ -15,6 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/post.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
 
 
     
@@ -28,18 +29,18 @@
 <div class="head" id="head">
   <div class="blog_social">
       <div class="social_bar">
-        <a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
-        <a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
+        <a href="https://www.tiktok.com/@lumenlabdev" target="_blank"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a>
+        <a href="https://www.instagram.com/lumenlabdev/" target="_blank"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a>
+        <a href="https://www.facebook.com/lolloCreator/" target="_blank"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a>
+        <a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" target="_blank"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a>
+        <a href="https://github.com/lolloCreator" target="_blank"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a>
+        <a href="mailto:luigi@luigipacelli.it" target="_blank"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a>
       </div>
     </div>
     <div class="container_head">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       LP
     </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,6 +91,66 @@
     <!-- /.row -->
 
   </div>
+
+  <footer>
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">A proposito di</h2>
+      <ul class="ft_list">
+        <li><a href="#">Servizi</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Informazioni</a></li>
+        <li><a href="#">Lavori</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Risorse</h2>
+      <ul class="ft_list">
+        <li><a href="#">Documenti</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Guide</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Contatti</h2>
+      <ul class="ft_list">
+        <li><a href="#">Aiuto</a></li>
+        <li><a href="#">Messaggio</a></li>
+        <li><a href="#">Contattami</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Resta Aggiornato</h2>
+      <p>Iscriviti alla newsletter per ricevere le nuove news.</p>
+      <form class="ft_form">
+        <input type="email" name="email" placeholder="Inserisci una email">
+        <input type="submit" value="Iscriviti">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer social -->
+  <section class="ft-social">
+    <ul class="ft-social-list">
+      <li><a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a></li>
+      <li><a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a></li>
+    </ul>
+  </section>
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Termini &amp; Condizioni</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; {{ now()->year }} Copyright <a href="https://luigipacelli.it/">lolloCreator</a></li>
+    </ul>
+  </section>
+</footer>
           <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
