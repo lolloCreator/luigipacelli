@@ -193,13 +193,13 @@
 
   <!-- Footer social -->
   <section class="ft-social">
-    <ul class="ft-social-list">
-      <li><a href="#"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a></li>
-      <li><a href="#"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a></li>
-      <li><a href="#"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a></li>
-      <li><a href="#"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a></li>
-      <li><a href="#"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a></li>
-      <li><a href="#"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a></li>
+  <ul class="ft-social-list">
+      <li><a href="https://www.tiktok.com/@lumenlabdev" target="_blank"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a></li>
+      <li><a href="https://www.instagram.com/lumenlabdev/" target="_blank"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a></li>
+      <li><a href="https://www.facebook.com/lolloCreator/"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a></li>
+      <li><a href="https://www.linkedin.com/in/luigi-pacelli-380197121/" target="_blank"><img src="{{ asset('fonts/icon/linkedin.svg') }}"></img></a></li>
+      <li><a href="https://github.com/lolloCreator" target="_blank"><img src="{{ asset('fonts/icon/github.svg') }}"></img></a></li>
+      <li><a href="mailto:luigi@luigipacelli.it" target="_blank"><img src="{{ asset('fonts/icon/email.svg') }}"></img></a></li>
     </ul>
   </section>
 
