@@ -19,7 +19,7 @@ return [
     //Footer
     'a_proposito' => 'About',
     'risorse' => 'Resources',
-    'contatti' => 'Contacts',
+    'contatti' => 'Contact me',
     'aggiornato' => 'Stay Updated',
     'iscriviti' => 'Subscribe to the newsletter to receive our news.',
     'ins_email' => 'Enter an email',

@@ -18,7 +18,7 @@ return [
     //FOOTER
     'a_proposito' => 'A proposito di',
     'risorse' => 'Risorse',
-    'contatti' => 'Contatti',
+    'contatti' => 'Contattami',
     'aggiornato' => 'Resta aggiornato',
     'iscriviti' => 'Iscriviti alla newsletter per ricevere le nuove news.',
     'ins_email' => 'Inserisci una email',

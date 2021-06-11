@@ -1,6 +1,12 @@
 <?php
  //Template --  '' => '',
 return [
+    //GENERALI
+    'manut' => 'MAINTENANCE',
+    'manut_desc1' => 'Hi, the site is in',
+    'manut_desc2' => 'You can still browse freely. If you have loading problems, bugs or slowdowns this is the cause.',
+    'manut_strong' => 'maintenance mode!',
+    
     //Menu
     'home' => 'Home',
     'about' => 'About',
@@ -11,6 +17,14 @@ return [
     'dashboard' => 'Dashboard',
     'accedi' => 'Login',
     'registrati' => 'Register',
+
+    //INDEX
+    'f' => 'Passionate about',
+    'f1' => 'development',
+    'f2' => 'programming',
+    'f3' => 'technology',
+    'f4' => 'the mobile world',
+    'f5' => 'web design',
 
     //Sezione - About
     'about_nome' => 'About',
@@ -69,5 +83,9 @@ return [
     'email' => 'Email',
     'oggetto' => 'Object',
     'mex' => 'Message',
-    'invia_msg' => 'Send message'
+    'invia_msg' => 'Send message',
+
+    //Modal index (provvisorio)
+    'mod_titolo' => 'Welcome, read before continuing',
+    'mod_body' => 'Hi and thanks for joining us, we are working to help everyone. We are creating a community dedicated to web and mobile development. To get started, you could join the telegram channel to receive important news and the discord server to help each other. I trust in you and good work.',
 ];

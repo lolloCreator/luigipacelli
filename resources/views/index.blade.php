@@ -54,11 +54,11 @@
 <header id="header" class="header-tops">
     <div class="container">
 
-      <h1><a class="palla" href="{{ url('/') }}">Luigi Pacelli</a></h1>
+      <h1><a class="nome" href="{{ url('/') }}">Luigi Pacelli</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Appassionato del<span class="codice" data-period="2000"
-     data-rotate='[ "lo sviluppo", "la programmazione", "la tecnologia", " mondo mobile"]'></span></h2>
+      <h2>@lang('messages.f') <span class="codice" data-period="2000"
+     data-rotate='[ "@lang("messages.f1")", "@lang("messages.f2")", "@lang("messages.f3")", "@lang("messages.f4")", "@lang("messages.f5")" ]'></span></h2>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           
@@ -707,9 +707,8 @@
 
         @if( setting('site.manutenzione') ) 
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <h4 class="alert-heading">MANUTENZIONE!</h4>
-  Ciao, il sito è in <strong>manutenzione!</strong> Puoi comunque navigare liberamente.
-  Se hai problemi di carcamento, bug o rallentamenti è questa la causa.
+  <h4 class="alert-heading">@lang('messages.manut')!</h4>
+  @lang('messages.manut_desc1') <strong>@lang('messages.manut_strong')</strong> @lang('messages.manut_desc2')
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -719,9 +718,28 @@
   Designed by <a href="https://luigipacelli.it/">lolloCreator</a>
 
 
+</div>
 
-
-
+<!-- Modal -->
+<div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">@lang('messages.mod_titolo')</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      @lang('messages.mod_body')
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a role="button" target="_blank" href="https://discord.gg/zCDxCUAV35" type="button" class="btn btn-info">Discord</a>
+        <a role="button" target="_blank" href="https://t.me/wedistrict" type="button" class="btn btn-info">Telegram</a>
+      </div>
+    </div>
+  </div>
 </div>
 
   <!-- Vendor JS Files -->
@@ -741,6 +759,11 @@
   <script src="https://kit.fontawesome.com/9b95a72150.js" crossorigin="anonymous"></script>
 
 
+    <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#startModal').modal('show');
+    });
+  </script>
 
 </body>
 </html>

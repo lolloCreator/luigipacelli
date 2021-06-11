@@ -96,43 +96,38 @@
   <!-- Footer main -->
   <section class="ft-main">
     <div class="ft-main-item">
-      <h2 class="ft-title">A proposito di</h2>
+      <h2 class="ft-title">@lang('blog.a_proposito')</h2>
       <ul class="ft_list">
-        <li><a href="#">Servizi</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Informazioni</a></li>
-        <li><a href="#">Lavori</a></li>
+        <li><a href="/">@lang('messages.servizi')</a></li>
+        <li><a href="/">@lang('messages.portfolio')</a></li>
+        <li><a href="/">@lang('messages.about')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Risorse</h2>
+      <h2 class="ft-title">@lang('blog.risorse')</h2>
       <ul class="ft_list">
-        <li><a href="#">Documenti</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Guide</a></li>
+        <li><a href="/blog">@lang('blog.titolo')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Contatti</h2>
+      <h2 class="ft-title">@lang('blog.contatti')</h2>
       <ul class="ft_list">
-        <li><a href="#">Aiuto</a></li>
-        <li><a href="#">Messaggio</a></li>
-        <li><a href="#">Contattami</a></li>
+        <li><a href="/">@lang('messages.contatti')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Resta Aggiornato</h2>
-      <p>Iscriviti alla newsletter per ricevere le nuove news.</p>
+      <h2 class="ft-title">@lang('blog.aggiornato')</h2>
+      <p>@lang('blog.iscriviti')</p>
       <form class="ft_form">
-        <input type="email" name="email" placeholder="Inserisci una email">
-        <input type="submit" value="Iscriviti">
+        <input type="email" name="email" placeholder="@lang('blog.ins_email')">
+        <input type="submit" value="@lang('blog.isc_btn')">
       </form>
     </div>
   </section>
 
   <!-- Footer social -->
   <section class="ft-social">
-    <ul class="ft-social-list">
+  <ul class="ft-social-list">
       <li><a href="https://www.tiktok.com/@lumenlabdev" target="_blank"><img src="{{ asset('fonts/icon/tiktok.svg') }}"></img></a></li>
       <li><a href="https://www.instagram.com/lumenlabdev/" target="_blank"><img src="{{ asset('fonts/icon/instagram.svg') }}"></img></a></li>
       <li><a href="https://www.facebook.com/lolloCreator/"><img src="{{ asset('fonts/icon/facebook.svg') }}"></img></a></li>
@@ -145,12 +140,14 @@
   <!-- Footer legal -->
   <section class="ft-legal">
     <ul class="ft-legal-list">
-      <li><a href="#">Termini &amp; Condizioni</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">@lang('blog.termini')</a></li>
+      <li><a href="#">@lang('blog.privacy')</a></li>
       <li>&copy; {{ now()->year }} Copyright <a href="https://luigipacelli.it/">lolloCreator</a></li>
     </ul>
   </section>
 </footer>
+
+
           <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

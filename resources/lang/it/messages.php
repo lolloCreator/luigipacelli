@@ -1,6 +1,13 @@
 <?php
  //Template --  '' => '',
 return [
+     //GENERALI
+     'manut' => 'MANUTENZIONE',
+     'manut_desc1' => 'Ciao, il sito è in',
+     'manut_desc2' => 'Puoi comunque navigare liberamente. Se hai problemi di caricamento, bug o rallentamenti è questa la causa.',
+     'manut_strong' => 'manutenzione!',
+     
+
     //Menu
     'home' => 'Home',
     'about' => 'About',
@@ -11,6 +18,14 @@ return [
     'dashboard' => 'Dashboard',
     'accedi' => 'Accedi',
     'registrati' => 'Registrati',
+
+    //INDEX
+    'f' => 'Appassionato del',
+    'f1' => 'lo sviluppo',
+    'f2' => 'la programmazione',
+    'f3' => 'la tecnologia',
+    'f4' => 'mondo mobile',
+    'f5' => 'l web design',
 
     //Sezione - About
     'about_nome' => 'About',

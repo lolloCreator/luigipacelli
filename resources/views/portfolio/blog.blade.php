@@ -159,26 +159,21 @@
     <div class="ft-main-item">
       <h2 class="ft-title">@lang('blog.a_proposito')</h2>
       <ul class="ft_list">
-        <li><a href="#">Servizi</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Informazioni</a></li>
-        <li><a href="#">Lavori</a></li>
+        <li><a href="/">@lang('messages.servizi')</a></li>
+        <li><a href="/">@lang('messages.portfolio')</a></li>
+        <li><a href="/">@lang('messages.about')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
       <h2 class="ft-title">@lang('blog.risorse')</h2>
       <ul class="ft_list">
-        <li><a href="#">Documenti</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Guide</a></li>
+        <li><a href="/blog">@lang('blog.titolo')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
       <h2 class="ft-title">@lang('blog.contatti')</h2>
       <ul class="ft_list">
-        <li><a href="#">Aiuto</a></li>
-        <li><a href="#">Messaggio</a></li>
-        <li><a href="#">Contattami</a></li>
+        <li><a href="/">@lang('messages.contatti')</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
