@@ -295,13 +295,13 @@
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
-      <i class="ri-question-answer-fill" style="color: #11dbcf;"></i>
+      <i class="ri-smartphone-line" style="color: #11dbcf;"></i>
       <h3>@lang('messages.about_7')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
-      <i class="ri-message-2-line" style="color: #4233ff;"></i>
+      <i class="icofont-web" style="color: #4233ff;"></i>
       <h3>@lang('messages.about_8')</h3>
     </div>
   </div>
@@ -313,13 +313,13 @@
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
-      <i class="ri-github-line" style="color: #b20969;"></i>
+      <i class="icofont-box" style="color: #b20969;"></i>
       <h3>@lang('messages.about_10')</h3>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4">
     <div class="icon-box">
-      <i class="ri-stack-overflow-line" style="color: #ff5828;"></i>
+      <i class="icofont-heart-eyes" style="color: #ff5828;"></i>
       <h3>@lang('messages.about_11')</h3>
     </div>
   </div>
@@ -484,56 +484,56 @@
 <div class="container">
 
 <div class="section-title">
-  <h2>Servizi</h2>
-  <p>I miei servizi</p>
+  <h2>@lang('messages.servizi')</h2>
+  <p>@lang('messages.ser_titolo')</p>
 </div>
 
 <div class="row">
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
     <div class="icon-box">
       <div class="icon"><i class='bx bx-pencil'></i></div>
-      <h4><a href="servizi-blog">Blog</a></h4>
-      <p>Piattaforma per la pubblicazione di articoli con WordPress.</p>
+      <h4><a href="servizi-blog">@lang('messages.ser_tit_card1')</a></h4>
+      <p>@lang('messages.ser_desc_card1')</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
     <div class="icon-box">
       <div class="icon"><i class="ri-slideshow-line"></i></div>
-      <h4><a href="">Portfolio</a></h4>
-      <p>Una raccolta mirata di informazioni che dimostrano le tue abilità & competenze.</p>
+      <h4><a href="">@lang('messages.ser_tit_card2')</a></h4>
+      <p>@lang('messages.ser_desc_card2')</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
     <div class="icon-box">
       <div class="icon"><i class="ri-android-line"></i></div>
-      <h4><a href="">Android App</a></h4>
-      <p>Porta il tuo business nelle mani dei clienti, con l'app per dispositivi mobili.</p>
+      <h4><a href="">@lang('messages.ser_tit_card3')</a></h4>
+      <p>@lang('messages.ser_desc_card3')</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
     <div class="icon-box">
       <div class="icon"><i class="ri-image-edit-line"></i></div>
-      <h4><a href="">Grafica</a></h4>
-      <p>Personalizzazioni per siti web, immagini, inviti ed altro..</p>
+      <h4><a href="">@lang('messages.ser_tit_card4')</a></h4>
+      <p>@lang('messages.ser_desc_card4')</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
     <div class="icon-box">
       <div class="icon"><i class='bx bx-vector'></i></div>
-      <h4><a href="">Loghi</a></h4>
-      <p>Creazioni di loghi in stile vettoriale</p>
+      <h4><a href="">@lang('messages.ser_tit_card5')</a></h4>
+      <p>@lang('messages.ser_desc_card5')</p>
     </div>
   </div>
  
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
     <div class="icon-box">
       <div class="icon"><i class="ri-question-line"></i></div>
-      <h4><a href="">Assistenza</a></h4>
-      <p>Risoluzione BUG e modifiche su siti e app già realizzati, tra cui: Wordpress, PHP, Java, Html, CSS, SQL e API.<br></p>
+      <h4><a href="">@lang('messages.ser_tit_card6')</a></h4>
+      <p>@lang('messages.ser_desc_card6')<br></p>
     </div>
   </div>
 
@@ -602,8 +602,8 @@
 <div class="container">
 
 <div class="section-title">
-  <h2>Contact</h2>
-  <p>Contact Me</p>
+  <h2>@lang('messages.contatti')</h2>
+  <p>@lang('messages.cont_titolo')</p>
 </div>
 
 <div class="row mt-2">
@@ -611,15 +611,15 @@
   <div class="col-md-6 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-map"></i>
-      <h3>Paese</h3>
-      <p>Italia</p>
+      <h3>@lang('messages.cont_paese')</h3>
+      <p>@lang('messages.cont_italia')</p>
     </div>
   </div>
 
   <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-share-alt"></i>
-      <h3>Profili social</h3>
+      <h3>@lang('messages.cont_social')</h3>
       <div class="social-links">
         <a href="https://twitter.com/lolloCreator" class="twitter"><i class="ri-twitter-line"></i></a>
         <a href="https://www.facebook.com/lolloCreator/" class="facebook"><i class="ri-facebook-box-line"></i></a>
@@ -634,14 +634,14 @@
   <div class="col-md-6 mt-4 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-envelope"></i>
-      <h3>Email</h3>
+      <h3>@lang('messages.cont_email')</h3>
       <p>luigi@luigipacelli.it</p>
     </div>
   </div>
   <div class="col-md-6 mt-4 d-flex align-items-stretch">
     <div class="info-box">
       <i class="bx bx-envelope"></i>
-      <h3>Email secondaria</h3>
+      <h3>@lang('messages.cont_email_2')</h3>
       <p>lumenlabhelp@gmail.com</p>
     </div>
   </div>

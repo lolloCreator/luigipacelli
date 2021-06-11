@@ -73,7 +73,7 @@
                 $time = $datetime->format('H:i');
                 ?>
         <!-- Date/Time -->
-        <p>Aggiornato il {{$date}} alle {{$time}}</p>
+        <p>@lang('blog.inserito') {{$date}} @lang('blog.alle') {{$time}}</p>
 
         <hr>
 

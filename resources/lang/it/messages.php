@@ -41,10 +41,31 @@ return [
     'about_11' => 'Stack Overflow',
     'about_12' => 'Internet',
 
-        //Form Contatti
-        'nome' => 'Nome',
-        'email' => 'Email',
-        'oggetto' => 'Oggetto',
-        'mex' => 'Messaggio',
-        'invia_msg' => 'Invia il messaggio'
+    //Sezione - Servizi
+    'ser_titolo' => 'I miei servizi',
+    'ser_tit_card1' =>  'Blog',
+    'ser_desc_card1' => 'Piattaforma per la pubblicazione di articoli con WordPress.',
+    'ser_tit_card2' =>  'Siti per aziende',
+    'ser_desc_card2' => 'Siti web per aziende di piccola e media taglia, utilizzando i migliori framework sul mercato',
+    'ser_tit_card3' =>  'Android App',
+    'ser_desc_card3' => 'Porta il tuo business nelle mani dei clienti, con l\'app per dispositivi mobili.',
+    'ser_tit_card4' =>  'Grafica',
+    'ser_desc_card4' => 'Personalizzazioni per siti web, loghi vettoriali, immagini, inviti ed altro..',
+    'ser_tit_card5' =>  'Portfolio',
+    'ser_desc_card5' => 'Una raccolta mirata di informazioni che dimostrano le tue abilità & competenze.',
+    'ser_tit_card6' =>  'Assistenza',
+    'ser_desc_card6' => 'Risoluzione BUG e modifiche su siti e app già realizzati, tra cui: Wordpress, Laravel, PHP, Java, Html, CSS, SQL e API.',
+
+    //Form Contatti
+    'cont_titolo' => 'Contattami',
+    'cont_paese' => 'Stato',
+    'cont_italia' => 'Italia',
+    'cont_email' => 'Email',
+    'cont_email_2' => 'Email Secondaria',
+    'cont_social' => 'Profili social',
+    'nome' => 'Nome',
+    'email' => 'Email',
+    'oggetto' => 'Oggetto',
+    'mex' => 'Messaggio',
+    'invia_msg' => 'Invia il messaggio'
 ];

@@ -62,7 +62,7 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="my-4">Blog</h1>
+        <h1 class="my-4">@lang('blog.titolo')</h1>
        
     @if($posts->isNotEmpty())
         @foreach($posts as $post)
@@ -73,12 +73,12 @@
             <a href="/post/{{ $post->slug }}"><h2 class="card-title">{{ $post->title }}</h2></a>
             <p class="card-text">{{ $post->excerpt }}</p>
             <div class="btn_read">
-            <a href="/post/{{ $post->slug }}" class="btn btn-info animated"><span class="read_more">Continua a leggere </span></a>
+            <a href="/post/{{ $post->slug }}" class="btn btn-info animated"><span class="read_more">@lang('blog.leggi') </span></a>
           </div>
         </div>
 
           <div class="card-footer text-muted">
-          Inserito il
+          @lang('blog.inserito')
           <?php 
                 $datetime = new DateTime($post->created_at);
                 $date = $datetime->format('d-m-Y');
@@ -90,10 +90,10 @@
     @else
     <div class="card mb-4">
     <div class="card-body">
-    <h2>Nessun articolo trovato</h2>
+    <h2>@lang('blog.nessun_articolo')</h2>
     </div>
     </div>
-    <a role="button" href="/blog" class="btn btn-secondary">Indietro</a>
+    <a role="button" href="/blog" class="btn btn-secondary">@lang('blog.indietro')</a>
     @endif
 
         <!-- Pagination -->
@@ -106,13 +106,13 @@
     
         <!-- Search Widget -->
         <div class="card my-4">
-          <h5 class="card-header">Ricerca qualcosa</h5>
+          <h5 class="card-header">@lang('blog.r_qualcosa')</h5>
           <div class="card-body">
           <form action="{{ route('search') }}" method="GET">
             <div class="input-group">
-              <input type="text" class="form-control" name="search" placeholder="Ricerca...">
+              <input type="text" class="form-control" name="search" placeholder="@lang('blog.ricerca')">
               <span class="input-group-append">
-                <button class="btn btn-secondary" type="submit">Vai!</button>
+                <button class="btn btn-secondary" type="submit">@lang('blog.vai')</button>
               </span>
             </div>
             </form>
@@ -123,7 +123,7 @@
 
      <!-- Categories Widget -->
      <div class="card my-4">
-       <h5 class="card-header">Categorie</h5>
+       <h5 class="card-header">@lang('blog.categorie')</h5>
        <div class="card-body">
              <ul class="list-group list-group-flush">
                @foreach($cat as $c)
@@ -157,7 +157,7 @@
   <!-- Footer main -->
   <section class="ft-main">
     <div class="ft-main-item">
-      <h2 class="ft-title">A proposito di</h2>
+      <h2 class="ft-title">@lang('blog.a_proposito')</h2>
       <ul class="ft_list">
         <li><a href="#">Servizi</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -166,7 +166,7 @@
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Risorse</h2>
+      <h2 class="ft-title">@lang('blog.risorse')</h2>
       <ul class="ft_list">
         <li><a href="#">Documenti</a></li>
         <li><a href="#">Blog</a></li>
@@ -174,7 +174,7 @@
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Contatti</h2>
+      <h2 class="ft-title">@lang('blog.contatti')</h2>
       <ul class="ft_list">
         <li><a href="#">Aiuto</a></li>
         <li><a href="#">Messaggio</a></li>
@@ -182,11 +182,11 @@
       </ul>
     </div>
     <div class="ft-main-item">
-      <h2 class="ft-title">Resta Aggiornato</h2>
-      <p>Iscriviti alla newsletter per ricevere le nuove news.</p>
+      <h2 class="ft-title">@lang('blog.aggiornato')</h2>
+      <p>@lang('blog.iscriviti')</p>
       <form class="ft_form">
-        <input type="email" name="email" placeholder="Inserisci una email">
-        <input type="submit" value="Iscriviti">
+        <input type="email" name="email" placeholder="@lang('blog.ins_email')">
+        <input type="submit" value="@lang('blog.isc_btn')">
       </form>
     </div>
   </section>
@@ -206,8 +206,8 @@
   <!-- Footer legal -->
   <section class="ft-legal">
     <ul class="ft-legal-list">
-      <li><a href="#">Termini &amp; Condizioni</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">@lang('blog.termini')</a></li>
+      <li><a href="#">@lang('blog.privacy')</a></li>
       <li>&copy; {{ now()->year }} Copyright <a href="https://luigipacelli.it/">lolloCreator</a></li>
     </ul>
   </section>
