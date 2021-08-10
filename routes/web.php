@@ -19,6 +19,19 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/new', function () {
+    $passed = App\Portfoliocategory::with('portfolios')->get();
+    return view('portfolio/new/index', compact('passed'));
+});
+
+Route::get('/contact', function () {
+    return view('portfolio/new/contact');
+});
+
+Route::get('/about', function () {
+    return view('portfolio/new/about');
+});
+
 Route::get('/', function () {
     $passed = App\Portfoliocategory::with('portfolios')->get();
     return view('index', compact('passed'));
@@ -27,6 +40,7 @@ Route::get('/', function () {
 Route::get('/bootstrap', function () {
     return view('bootstrap');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
