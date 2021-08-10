@@ -70,7 +70,7 @@
           <li><a href="#contact">@lang('messages.contatti')</a></li>
           <div class="separatore"></div>
           <li><a href="/blog">Blog</a></li>
-          <li><a href="/new">NEW WEBSITE (BETA)</a></li>
+         <!-- <li><a href="/new">NEW WEBSITE (BETA)</a></li> -->
           @if( setting('site.registrazione_abilitata'))
             @if (Route::has('login'))
             <div class="separatore"></div>
